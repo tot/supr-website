@@ -1,0 +1,86 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+*:focus {
+	outline: none !important;
+}
+
+#menu-toggle:checked + #menu {
+	display: block;
+}
+.btn-faq {
+	@apply w-full text-white bg-faq-background border border-faq-border mt-4 p-4 text-left outline-none cursor-pointer rounded-md;
+}
+.btn-faq:before {
+	@apply text-white font-bold float-right ml-4;
+}
+.faq-body {
+	max-height: 0;
+	transition: max-height 0.1s ease-out;
+	@apply mx-auto w-full overflow-hidden;
+}
+@screen md {
+	.btn-faq {
+		@apply w-2/3;
+	}
+	.faq-body {
+		@apply w-2/3;
+	}
+}
+@screen xl {
+	.btn-faq {
+		@apply w-7/12;
+	}
+	.faq-body {
+		@apply w-7/12;
+	}
+}
+.faq-text {
+	@apply p-4 mt-2 bg-faq-background rounded-md;
+}
+.status {
+	margin-bottom: 5px;
+	animation: status-pulse 1.5s infinite ease-out;
+}
+.btn-dash {
+	@apply py-3 text-white text-center font-bold rounded shadow-lg;
+}
+.current-license {
+	@apply border-module-border bg-module-background;
+}
+.inactive-license {
+	@apply border-none;
+}
+.dropdown {
+	@apply relative inline-block;
+}
+.dropdown-content {
+	min-width: 200px;
+	top: 3rem;
+	@apply p-6 rounded hidden absolute z-10 right-0 border border-module-border bg-module-background shadow-xl;
+  }
+.show {
+	display: block;
+}
+button > svg {
+	pointer-events: none;
+}
+input {
+	padding: 0;
+	margin: 0;
+}
+@keyframes status-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(26, 205, 66, 0.5);
+     }
+     100% {
+          box-shadow: 0 0 0 8px rgba(26, 205, 66, 0);
+     }
+}
+.background {
+	z-index: -10;
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;900&display=swap"
+		rel="stylesheet">
+	<!--<link rel="stylesheet" href="/build/tailwind.css">-->
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Supr Bot</title>
+
+	<style>
+		::-webkit-scrollbar {
+			width: 0px;
+			background: transparent;
+			height: 0px;
+		}
+	</style>
+</head>
+
+<body class="antialiased bg-background w-full overflow-x-hidden xl:overflow-y-hidden font-sans">
+	<section>
+		<div class="w-screen md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto mt-20">
+			<img src="assets/logo-dash.png" class="mx-auto mb-10 lg:mb-20 w-20">
+			<div class="mx-auto flex flex-col lg:flex-col xl:flex-row">
+				<div class="w-screen md:w-full px-4">
+					<h1 class="text-white font-bold text-xl mb-4 pl-6">User Info</h1>
+					<div class="w-full bg-module-background p-6 rounded border border-module-border mb-8">
+						<div class="flex justify-between">
+							<div>
+								<div class="flex">
+									<img src="assets/avi.png" class="w-12 h-12 rounded shadow-lg">
+									<div class="pl-3 self-center">
+										<h1
+											class="font-bold text-base text-white max-w-7 lg:max-w-15 whitespace-no-wrap overflow-x-auto">
+											cud@cudd.ly</h1>
+										<p class="text-sm text-user-label font-semibold">Friends & Family</p>
+									</div>
+								</div>
+							</div>
+							<div class="self-center">
+								<a href="./login.html" class="text-sign-out text-sm">
+									Sign out
+								</a>
+							</div>
+						</div>
+						<div class="bg-input-background px-2 py-1 my-6 rounded border border-input-border">
+							<h3 class="text-white font-bold text-lg">Discord</h3>
+							<p class="text-sm text-input-label">cud#9999</p>
+						</div>
+						<div class="my-6">
+							<button class="btn-dash bg-gradient-t-discord w-full">Bind to Discord</button>
+						</div>
+						<div class="mt-6 flex items-center">
+							<span class="h-3 w-3 status bg-online rounded-full"></span>
+							<p class="text-white text-base pl-2">Activated on <span class="font-bold">cuddly-PC</span>
+								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+									class="ml-1 align-middle inline-block" width="18" height="18" viewBox="0 0 24 24"
+									style=" fill:#ffffff;">
+									<path
+										d="M 22 3 L 13 3.9003906 L 13 11 L 22 11 L 22 3 z M 11 4.0996094 L 2 5 L 2 11 L 11 11 L 11 4.0996094 z M 2 13 L 2 19 L 11 19.900391 L 11 13 L 2 13 z M 13 13 L 13 20.099609 L 22 21 L 22 13 L 13 13 z">
+									</path>
+								</svg>
+							</p>
+						</div>
+					</div>
+					<div class="hidden lg:block mb-12">
+						<div class="flex">
+							<button class="btn-dash w-1/2 mr-2 bg-module-background hover:bg-gradient-t-purple">MacOS
+								Installer</button>
+							<button class="btn-dash w-1/2 ml-2 bg-module-background hover:bg-gradient-t-purple">Windows
+								Installer</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-screen md:w-full px-4 mb-8">
+					<div class="mb-4 flex justify-between">
+						<h1 class="text-white font-bold text-xl pl-6">Your Subscriptions</h1>
+						<div class="dropdown">
+							<button onclick="addLicense()"
+								class="dropbtn w-6 h-6 text-center rounded-full text-white bg-module-background border border-module-border mr-6">
+								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="fill-current mx-auto"
+									width="14" height="14" viewBox="0 0 24 24">
+									<path
+										d="M20,11h-7V4c0-0.552-0.448-1-1-1s-1,0.448-1,1v7H4c-0.552,0-1,0.448-1,1s0.448,1,1,1h7v7c0,0.552,0.448,1,1,1s1-0.448,1-1 v-7h7c0.552,0,1-0.448,1-1S20.552,11,20,11z">
+									</path>
+								</svg>
+							</button>
+							<div id="addLicenseKey" class="dropdown-content">
+								<div
+									class="bg-input-background px-2 py-1 mb-6 rounded border border-input-border w-full">
+									<input class="text-white font-bold text-lg bg-input-background"
+										placeholder="6ece25a4-14c3-421a-8bc8-68c4f82787d4">
+									<p class="text-sm text-input-label">License</p>
+								</div>
+								<button class="btn-dash mr-2 bg-gradient-t-purple w-full">Add</button>
+							</div>
+						</div>
+					</div>
+					<div class="w-full bg-module-background p-6 rounded border border-module-border mb-8">
+						<div class="bg-input-background px-2 py-1 mb-6 rounded border border-input-border w-full">
+							<h3 class="text-white font-bold text-lg whitespace-no-wrap overflow-x-auto">
+								6ece25a4-14c3-421a-8bc8-68c4f82787d4</h3>
+							<p class="text-sm text-input-label">License</p>
+						</div>
+						<div class="flex mb-8">
+							<div class="w-1/2 mr-2 bg-input-background px-2 py-1 rounded border border-input-border">
+								<h3 class="text-white font-bold text-lg whitespace-no-wrap overflow-x-auto">Lifetime
+								</h3>
+								<p class="text-sm text-input-label">License Type</p>
+							</div>
+							<div class="w-1/2 ml-2 bg-input-background px-2 py-1 rounded border border-input-border">
+								<h3 class="text-white font-bold text-lg whitespace-no-wrap overflow-x-auto">10/20/3030
+								</h3>
+								<p class="text-sm text-input-label">Expiration</p>
+							</div>
+						</div>
+						<div class="bg-input-background px-2 py-1 mb-6 rounded border border-input-border w-full">
+							<h3 class="text-white font-bold text-lg whitespace-no-wrap overflow-x-auto">November 13,
+								2019</h3>
+							<p class="text-sm text-input-label">Last Activated</p>
+						</div>
+						<div class="flex">
+							<button class="btn-dash w-1/2 mr-2 bg-gradient-t-pink">Reset</button>
+							<button class="btn-dash w-1/2 ml-2 bg-gradient-t-purple">Renew</button>
+						</div>
+					</div>
+					<div class="text-white font-bold flex justify-center">
+						<button class="py-1 px-2 border current-license rounded mx-1">1</button>
+						<button class="py-1 px-2 inactive-license rounded mx-1">2</button>
+						<button class="py-1 px-2 inactive-license border-none rounded mx-1">3</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<img src="assets/top-right.png" class="absolute top-0 right-0 background">
+	<img src="assets/bottom-left.png" class="absolute bottom-0 left-0 background">
+	<script>
+		function addLicense() {
+			document.getElementById('addLicenseKey').classList.toggle('show');
+		}
+		window.onclick = function (event) {
+			if (!event.target.matches('.dropbtn') && !document.getElementsByClassName('dropdown-content')[0].contains(
+					event.target)) {
+				let dropdowns = document.getElementsByClassName('dropdown-content');
+				let i;
+				for (i = 0; i < dropdowns.length; i++) {
+					let openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>
